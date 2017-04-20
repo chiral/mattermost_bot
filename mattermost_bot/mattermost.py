@@ -65,7 +65,7 @@ class MattermostAPI(object):
                 'channel_id': channel_id,
                 'message': message,
                 'create_at': create_at,
-                'filenames': files or [],
+                'file_ids': files or [],
                 'pending_post_id': user_id + ':' + str(create_at),
                 'state': "loading",
                 'parent_id': pid,
